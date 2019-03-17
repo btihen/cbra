@@ -46,7 +46,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# My GEMS
+# ADDED GEMS
 
 # DEV / TESTS
 #############
@@ -70,16 +70,17 @@ group :development do
   gem 'brakeman'
   # brakeman
 
-  # starUML for uml diagram and RailsERD for Entity Diagram
-  # https://voormedia.github.io/rails-erd/install.html
-  # brew install graphviz
-  gem 'rails-erd'
-  # rake erd
-
-  # see dependency graph
-  gem 'cobradeps'
-
-  # capture emails in the web browser
+  # # starUML for uml diagram and RailsERD for Entity Diagram
+  # # https://voormedia.github.io/rails-erd/install.html
+  # # brew install graphviz
+  # gem 'rails-erd'
+  # # rake erd
+  #
+  # # dependency graph
+  # # brew install graphviz
+  # gem 'cobradeps'
+  #
+  # # capture emails in the web browser
   # gem 'letter_opener'
 end
 
@@ -170,3 +171,7 @@ end
 #
 # # Add react helper for components and react installation
 # gem 'react-rails'
+
+# help for cobradeps add: group: [:default, :direct]
+gem 'landing', path: 'components/landing'
+
